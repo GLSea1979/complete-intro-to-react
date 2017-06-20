@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>a component</title>
+  </head>
+  <body>
+    <div id="app">no rendering yet</div>
+    <script src="node_modules/react/dist/react.js"></script>
+    <script src="node_modules/react-dom/dist/react-dom.js"></script>
+    <script type="text/javascript">
+      var MyFirst = react.createClass({
+        render: function() {
+          return (
+            React.DOM.div(null)
+              React.DOM.h1(null, 'this is my first app')
+          )
+        }
+      })
+      ReactDOM.render(React.createElement(MyFirst),)
+    </script>
+  </body>
+</html>
